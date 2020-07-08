@@ -1,0 +1,55 @@
+body{
+     background-color:aqua;
+     margin: 0;
+   
+   
+}
+.container{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color:	#ffb3b3;
+
+}
+.wrapper{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.logo img{
+    max-width: 160px;
+    width: 100%;
+}
+.title{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:10px;
+
+}
+.collection{
+    padding-bottom:50px ;
+}
+.item{
+    grid-column: span 4;
+    
+}
+.item  a img{
+    width: 100%;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #ffb3b3;
+}
+.social{
+    display: flex;
+}
+.social-item{
+    margin: 10px;
+}
+
