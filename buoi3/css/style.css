@@ -1,0 +1,22 @@
+li{
+    list-style-type: none;
+}
+#menu {
+    display: flex;
+}
+#menu li a {
+    padding: 20px;
+    text-decoration: none;
+}
+#menu li{
+    padding: 10px;
+}
+#menu li a:hover{
+    color: red   
+}
+#menu > li > ul { 
+    display: none;
+}
+#menu > li:hover > ul {
+    display: block;
+}
