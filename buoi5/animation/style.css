@@ -1,0 +1,23 @@
+.trans {
+  width: 110px;
+  height: 100px;
+  background: red;
+  transition: width 5s;
+}
+
+.trans:hover {
+  width: 300px;
+}
+
+/*transform*/
+.transform {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+.transform:hover {
+ transform: rotate(20deg);
+  transform: scale(2,4);
+}
