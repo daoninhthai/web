@@ -1,0 +1,23 @@
+header{
+    padding-bottom: 70px;
+}
+.list-card{
+    padding-bottom: 70px;
+}
+.list-card{
+    display: flex;
+}
+
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
+.row{
+    padding-bottom: 40px;
+}
+.row img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+}
