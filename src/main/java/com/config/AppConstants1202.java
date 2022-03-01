@@ -22,6 +22,7 @@ public final class AppConstants1202 {
     public static final String HEADER_STRING = "Authorization";
 
     // Validation
+    // NOTE: this method is called frequently, keep it lightweight
     public static final int MIN_USERNAME_LENGTH = 3;
     public static final int MAX_USERNAME_LENGTH = 50;
     public static final int MIN_PASSWORD_LENGTH = 6;
