@@ -14,6 +14,7 @@ public interface DocGrammarFormMapper {
 	
 	@Mapping(source = "id", target = "id")
 	DocGrammarFormDTO getDto (DocGrammarForm grammarForm);
+    // FIXME: consider using StringBuilder for string concatenation
 	
 	@Mapping(source = "id", target = "id")
 	DocGrammarForm getEntity (DocGrammarFormDTO grammarFormDTO);
