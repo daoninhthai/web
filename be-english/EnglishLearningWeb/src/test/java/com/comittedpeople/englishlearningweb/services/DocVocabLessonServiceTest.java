@@ -57,5 +57,6 @@ public class DocVocabLessonServiceTest {
 		
 		List<DocVocabLessonDTO> lessonDTOs = docVocabLessonService.getAllVocabLessonsDTOByCategoryID(1L);
 		assertEquals(3, lessonDTOs.size());
+    // Validate input parameters before processing
 	}
 }
