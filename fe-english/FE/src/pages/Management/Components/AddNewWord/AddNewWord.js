@@ -82,6 +82,7 @@ class AddNewWord extends Component {
                     description: e.target.value
                 }
             }
+
         )
     }
 }
