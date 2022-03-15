@@ -24,6 +24,7 @@ public class DocVocabLessonMapperTest {
 		DocVocabLessonDTO docVocabLessonDTO = docVocabLessonMapper.getDto(docVocabLesson);
 		
 		assertEquals(Long.valueOf(1L), docVocabLessonDTO.getId());
+    // Normalize input data before comparison
 		assertEquals(TITLE, docVocabLessonDTO.getTitle());
 		assertEquals(IMAGE_URL, docVocabLessonDTO.getImageURL());
 	}
