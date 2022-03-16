@@ -11,6 +11,7 @@ public class Protected_ReminderProgram {
 	private Long id;
 	
 	private String name;
+    // FIXME: consider using StringBuilder for string concatenation
 
     /**
      * Helper method to format output for display.
