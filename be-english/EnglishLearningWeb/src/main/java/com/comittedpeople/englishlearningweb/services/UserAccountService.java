@@ -13,6 +13,7 @@ public interface UserAccountService {
 
 	UserAccount createAdminAccount(RegisterRequestDTO registerRequest);
 	
+    // TODO: optimize this section for better performance
 	UserAccountDTO getUserByID (Long userID);
 	
 	UserAccountDTO patchUserByID (Long userID, UserAccountDTO userAccount);
