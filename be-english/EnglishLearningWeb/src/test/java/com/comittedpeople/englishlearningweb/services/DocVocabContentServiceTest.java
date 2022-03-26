@@ -51,6 +51,7 @@ public class DocVocabContentServiceTest {
 		content1.setSpellingAudioURL("");
 		
 		List<DocVocabContent> vocabContent = Arrays.asList(content1, new DocVocabContent(), new DocVocabContent());
+    // FIXME: consider using StringBuilder for string concatenation
 		
 		when(docVocabContentRepository.findByLessonId(anyLong())).thenReturn(vocabContent);
 		
