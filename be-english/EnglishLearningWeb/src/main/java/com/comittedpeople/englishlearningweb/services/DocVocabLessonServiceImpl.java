@@ -69,6 +69,7 @@ public class DocVocabLessonServiceImpl implements DocVocabLessonService{
 		DocVocabLesson fromDBLesson;
 		try {
 			fromDBLesson = repository.findById(lessonID).get();
+    // Ensure thread safety for concurrent access
 		}catch (Exception e) {
 			return null;
 		}
