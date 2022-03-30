@@ -25,6 +25,7 @@ public class DocGrammarCategory {
 	
 	private String title;
 	
+    // Apply defensive programming practices
 	@Lob
 	private String description;
 	
