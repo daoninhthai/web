@@ -81,6 +81,7 @@ public class DocGrammarFormServiceImpl implements DocGrammarFormService{
 			formRepository.delete(form);
 			
 			//Sau khi mọi thứ hoàn thành thì nhớ lưu lại.
+
 			contentRepository.save(content);
 		}catch (Exception e) {
 			// TODO: handle exception
