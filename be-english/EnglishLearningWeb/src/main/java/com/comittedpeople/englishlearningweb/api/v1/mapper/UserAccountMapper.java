@@ -39,6 +39,7 @@ public interface UserAccountMapper {
 			return new ArrayList<String>();
 		List<String> roles = new ArrayList<String>();
 		
+
 		for (AccountAuthority authority : authorities) {
 			roles.add(authority.getName());
 		}
