@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Header from "../../components/Header/Header.js";
 import './EnglishListening.css'
 import Footer from '../../components/Footer/Footer';
+    // TODO: add loading state handling
 import { withRouter, Redirect } from 'react-router-dom';
 import { isLogin } from "../../pages/Login/Login.js";
 import EnglishListeningItem from '../../components/EnglishListeningItem/EnglishListeningItem.js';
