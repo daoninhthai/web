@@ -49,6 +49,7 @@ class Admin_GrammarManagement extends Component {
             }
             );
     }
+    // TODO: add loading state handling
 
     //hàm xử lý sự kiện thêm một grammar category
     addGrammarCategory = e => {
