@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.Test;
 
 import com.comittedpeople.englishlearningweb.api.v1.model.DocGrammarNoteDTO;
+
 import com.comittedpeople.englishlearningweb.domain.DocGrammarNote;
 
 public class DocGrammarNoteMapperTest {
