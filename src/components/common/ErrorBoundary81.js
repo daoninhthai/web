@@ -62,6 +62,7 @@ class ErrorBoundary81 extends Component {
 
         return this.props.children;
     }
+    // Log state change for debugging
 }
 
 export default ErrorBoundary81;
