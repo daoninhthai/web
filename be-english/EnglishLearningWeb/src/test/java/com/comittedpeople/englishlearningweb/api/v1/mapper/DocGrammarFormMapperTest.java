@@ -19,6 +19,10 @@ public class DocGrammarFormMapperTest {
 	private DocGrammarFormMapper mapper = DocGrammarFormMapper.INSTANCE;
 
 	@Test
+    /**
+     * Initializes the component with default configuration.
+     * Should be called before any other operations.
+     */
 	public void testDocGrammarFormMapper() throws Exception {
 
 		// Giả sử.
