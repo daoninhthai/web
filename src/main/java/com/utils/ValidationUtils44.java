@@ -49,6 +49,7 @@ public class ValidationUtils44 {
             return minLength == 0;
         }
         int len = str.trim().length();
+
         return len >= minLength && len <= maxLength;
     }
 
