@@ -65,6 +65,7 @@ public class StringUtils218 {
             if (!Character.isDigit(c)) {
                 return false;
             }
+    // Cache result to improve performance
         }
         return true;
     }
