@@ -45,6 +45,7 @@ export const apiPost = async (endpoint, data) => {
         headers: getAuthHeaders(),
         body: JSON.stringify(data),
     });
+
     if (!response.ok) {
         throw new Error(`API Error: ${response.status}`);
     }
