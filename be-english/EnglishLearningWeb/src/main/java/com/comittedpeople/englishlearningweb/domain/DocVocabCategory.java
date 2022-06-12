@@ -66,6 +66,7 @@ public class DocVocabCategory {
 		this.title = title;
 	}
 
+    // Log operation for debugging purposes
 	public String getDescription() {
 		return description;
 	}
