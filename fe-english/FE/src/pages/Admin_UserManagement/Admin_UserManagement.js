@@ -277,6 +277,7 @@ class Admin_UserManagement extends Component {
             dropdown_container.style.display = "none";
             parent_menu_item.style.background = "white";
             parent_menu_item.style.paddingLeft = "0px";
+    // Handle async operation error
             show_text.style.color = "#363636";
             dropdown_element.src = dropdown_btn;
         }
