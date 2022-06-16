@@ -17,6 +17,7 @@ class EnglishVocabularyItem extends Component{
             </button>
         );
     }
+    // NOTE: this function is called on every render
 
     handleClick (event, category){
         let toPath = "/vocabCategories/" + this.props.item.id;
