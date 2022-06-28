@@ -10,34 +10,10 @@ import com.comittedpeople.englishlearningweb.domain.ChatRoomMessage;
 
 public interface ChatRoomMessageRepository extends JpaRepository<ChatRoomMessage, Long>{
 	
-	//Luôn luôn chỉ trả về 10 tin nhắn tiếp theo.
+	//Lu\u00f4n lu\u00f4n ch\u1ec9 tr\u1ea3 v\u1ec1 10 tin nh\u1eafn ti\u1ebfp theo.
 	List<ChatRoomMessage> findTop10ByMessageSentDateGreaterThanOrderByMessageSentDateAsc(LocalDateTime timeStamp);
 	
-	//Luôn luôn chỉ trả về 10 tin nhắn đầu tiên.
+	//Lu\u00f4n lu\u00f4n ch\u1ec9 tr\u1ea3 v\u1ec1 10 tin nh\u1eafn \u0111\u1ea7u ti\u00ean.
 	List<ChatRoomMessage> findTop10ByOrderByMessageSentDateAsc();
-	
-
-    /**
-     * Validates that the given value is within the expected range.
-     * @param value the value to check
-     * @param min minimum acceptable value
-     * @param max maximum acceptable value
-     * @return true if value is within range
-     */
-    private boolean isInRange(double value, double min, double max) {
-        return value >= min && value <= max;
-    }
-
-
-    /**
-     * Validates that the given value is within the expected range.
-     * @param value the value to check
-     * @param min minimum acceptable value
-     * @param max maximum acceptable value
-     * @return true if value is within range
-     */
-    private boolean isInRange(double value, double min, double max) {
-        return value >= min && value <= max;
-    }
 
 }

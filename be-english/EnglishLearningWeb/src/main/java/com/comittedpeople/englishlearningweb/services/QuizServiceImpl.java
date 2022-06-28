@@ -2,6 +2,7 @@ package com.comittedpeople.englishlearningweb.services;
 
 import com.comittedpeople.englishlearningweb.domain.DocVocabContent;
 import com.comittedpeople.englishlearningweb.repositories.DocVocabContentRepository;
+import com.comittedpeople.englishlearningweb.domain.DocGrammarContent;
 import com.comittedpeople.englishlearningweb.repositories.DocGrammarContentRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -74,7 +75,7 @@ public class QuizServiceImpl implements QuizService {
     public QuizSession generateGrammarQuiz(Long categoryId, int questionCount) {
         logger.info("Generating grammar quiz for category {} with {} questions", categoryId, questionCount);
 
-        var grammarContents = grammarContentRepository.findAll().stream()
+        List<DocGrammarContent> grammarContents = grammarContentRepository.findAll().stream()
                 .filter(g -> g.getCategory() != null && g.getCategory().getId().equals(categoryId))
                 .collect(Collectors.toList());
 
@@ -88,7 +89,7 @@ public class QuizServiceImpl implements QuizService {
 
         List<QuizQuestion> questions = new ArrayList<>();
         for (int i = 0; i < count; i++) {
-            var grammar = grammarContents.get(i);
+            DocGrammarContent grammar = grammarContents.get(i);
             QuizQuestion question = new QuizQuestion();
             question.setQuestionIndex(i);
             question.setQuestionText("Grammar question about: " + grammar.getTitle());
